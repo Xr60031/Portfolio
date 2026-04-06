@@ -63,3 +63,30 @@ h1,h2,h3,h4,h5,h6,p,a{
     background-color: var(--color-github);
     color: var(--color-text-github);
 }
+
+
+.timeline-item {
+transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+cursor: default;
+opacity: 0.8;
+}
+
+.timeline-item:hover {
+opacity: 1;
+transform: scale(1.03) translateX(10px);
+}
+
+.timeline-date span {
+transition: color 0.3s ease;
+}
+.timeline-item:hover .timeline-date {
+border-right-width: 5px !important;
+}
+
+.timeline-content h5 {
+transition: letter-spacing 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content h5 {
+letter-spacing: 1px;
+}
