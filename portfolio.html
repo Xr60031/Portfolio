@@ -8,11 +8,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
     </head>
-    <body style="background-color: whitesmoke;">
+    <body style="background-color: black;">
         <main>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">EB</a>
+                    <h1 class="navbar-brand">EB</h1>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -22,128 +22,150 @@
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">About me</a>
+                        <a class="nav-link" href="#aboutme">About me</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#studies">Studies</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Studies</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                     </div>
                 </div>
             </nav>
 
-            <br>
-            <div class="contact-container">
-                <div class="contact whatsapp">
-                    <h1>WhatsApp</h1>
-                    <a aria-label="Chat on WhatsApp" href="https://wa.me/5491138857351/?text=Hola!%20me%20encuentro%20interesado%20en%20tus%20servicios." target="_blank">
-                        <img alt="Chat on WhatsApp" src="static/images/Whatsapp Assets/whatsapp.png" class="contactimg"/>
-                    </a>
-                </div>
-                <div class="contact gmail">
-                    <h1>Gmail</h1>
-                    <a href="mailto:ezequielbacchini@gmail.com" target="_blank"><img alt="Chat on Gmail" src="static/images/Gmail Assets/gmail.png" class="contactimg"/></a>
-                </div>
-                <div class="contact github">
-                    <h1>GitHub</h1>
-                    <a href="https://github.com/Xr60031" target="_blank"><img alt="GitHub" src="static/images/GitHub Assets/github.png" class="contactimg"/></a>
-                </div>
-            </div>
-            <br>
-
-            <div class="container-fluid p-0 overflow-hidden bg-dark text-white">
-                <div class="row g-0 vh-100 align-items-stretch">
-                    
-                    <div id="side-left" class="col-md-5 d-flex flex-column justify-content-center align-items-center p-5 bg-black split-side border-end border-secondary">
-                    <h2 id="p-title" class="display-3 fw-bold text-center mb-4">Helpy - Invoicing System</h2>
-                    
-                    <a id="p-link" href="https://github.com/Xr60031/PPS-Ezequiel-Bacchini" target="_blank" class="btn-github-custom">
-                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="30" class="me-2 filter-white">
-                        <span id="p-link-text">Visit GitHub</span>
-                    </a>
-
-                    <div class="mt-5 d-flex gap-3">
-                        <button class="btn btn-dark border-secondary rounded-circle" onclick="changeProject(-1)">❮</button>
-                        <button class="btn btn-dark border-secondary rounded-circle" onclick="changeProject(1)">❯</button>
-                    </div>
-                    </div>
-
-                    <div id="side-right" class="col-md-7 d-flex flex-column justify-content-center p-5 bg-dark split-side position-relative">
-                        <div id="p-content" class="fade-in">
-                            <img id="p-img" src="static/images/Project Assets/pps.png" class="img-fluid rounded shadow-lg mb-4 w-100" style="object-fit: cover; max-height: 50vh;">
-                            <div class="p-4 bg-black bg-opacity-25 rounded border-start border-3 border-danger">
-                                <h4 id="p-subtitle" class="text-danger fw-bold uppercase">Profesional Supervised Practice</h4>
-                                <p id="p-desc" class="lead text-light">Developed an invoicing system designed for users with mild intellectual disabilities, simplifying the billing process and providing guided assistance to maximize usability and ease of use.</p>
+            <section id="aboutme">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="display-1 fw-bold mb-4">
+                                <span id="typewriter"></span><span class="cursor">|</span>
+                            </h1>
+                            <div class="about-description mt-4">
+                                <p class="lead fs-3 text-white-50">
+                                    A passionate programmer always seeking to expand into new horizons, learn new tools, and explore new ideas. I enjoy working in teams and learning from my peers.
+                                </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
-            
-            <div class="container py-5">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                    <h2 class="text-center mb-5">Academic Timeline</h2>
-                    
-                    <div class="timeline-container">
-                        <div class="timeline-item d-flex mb-4">
-                        <div class="timeline-date pe-4 border-end border-2 border-dark text-end">
-                            <span class="fw-bold">2025</span>
-                        </div>
-                        <div class="timeline-content ps-4">
-                            <h5 class="fw-bold">Associate Degree in Information Systems</h5>
-                            <p class="text-muted small">Teamwork and collaboration skills. System analysis projects, applying both Waterfall and Scrum methodologies. Software design patterns and SOLID principles for building scalable and maintainable applications.</p>
+            </section>
+
+            <br><br><br>
+
+            <section id="projects">
+                <h1 class="text-center mb-5 text-white fw-bold display-2">Projects</h1>
+                <div class="container-fluid p-0 overflow-hidden bg-dark text-white">
+                    <div class="row g-0 vh-75 align-items-stretch">
+                        
+                        <div id="side-left" class="col-md-5 d-flex flex-column justify-content-center align-items-center p-5 bg-black split-side border-end border-secondary">
+                        <h2 id="p-title" class="display-3 fw-bold text-center mb-4">Helpy - Invoicing System</h2>
+                        
+                        <a id="p-link" href="https://github.com/Xr60031/PPS-Ezequiel-Bacchini" target="_blank" class="btn-github-custom">
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="30" class="me-2 filter-white">
+                            <span id="p-link-text">Visit GitHub</span>
+                        </a>
+
+                        <div class="mt-5 d-flex gap-3">
+                            <button class="btn btn-dark border-secondary rounded-circle" onclick="changeProject(-1)">❮</button>
+                            <button class="btn btn-dark border-secondary rounded-circle" onclick="changeProject(1)">❯</button>
                         </div>
                         </div>
 
-                        <div class="timeline-item d-flex mb-4">
-                        <div class="timeline-date pe-4 border-end border-2 border-dark text-end">
-                            <span class="fw-bold">2024</span>
-                        </div>
-                        <div class="timeline-content ps-4">
-                            <h5 class="fw-bold">Latam Challenge - SQL</h5>
-                            <p class="text-muted small">Database querying, data manipulation, and efficient data management.</p>
-                        </div>
-                        </div>
-
-                        <div class="timeline-item d-flex mb-4">
-                        <div class="timeline-date pe-4 border-end border-2 border-dark text-end">
-                            <span class="fw-bold">2023</span>
-                        </div>
-                        <div class="timeline-content ps-4">
-                            <h5 class="fw-bold">University Technical Degree in Programming</h5>
-                            <p class="text-muted small">Strong foundation in programming, including C, C++, Java, JavaScript, and TypeScript. Knowledge of object-oriented programming (OOP) and SOLID principles.</p>
-                        </div>
-                        </div>
-
-                        <div class="timeline-item d-flex mb-4">
-                        <div class="timeline-date pe-4 border-end border-2 border-dark text-end">
-                            <span class="fw-bold">2023</span>
-                        </div>
-                        <div class="timeline-content ps-4">
-                            <h5 class="fw-bold">Introduction to programming in Python</h5>
-                            <p class="text-muted small">Foundations of coding and creation of simple Python scripts.</p>
-                        </div>
+                        <div id="side-right" class="col-md-7 d-flex flex-column justify-content-center p-5 bg-dark split-side position-relative">
+                            <div id="p-content" class="fade-in">
+                                <img id="p-img" src="static/images/Project Assets/pps.png" class="img-fluid rounded shadow-lg mb-4 w-100" style="object-fit: cover; max-height: 50vh;">
+                                <div class="p-4 bg-black bg-opacity-25 rounded border-start border-3 border-white">
+                                    <h4 id="p-subtitle" class="text-white fw-bold uppercase">Profesional Supervised Practice</h4>
+                                    <p id="p-desc" class="lead text-light">Developed an invoicing system designed for users with mild intellectual disabilities, simplifying the billing process and providing guided assistance to maximize usability and ease of use.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
+                </div>
+            </section>
+
+            <section id="studies">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h1 class="text-center mb-5 text-white fw-bold display-2">Academic Timeline</h1>
+                            
+                            <div class="timeline-container">
+                                <div class="timeline-item d-flex mb-4">
+                                    <div class="timeline-date pe-4 border-end border-2 border-dark text-end">
+                                        <span class="fw-bold text-white">2025</span>
+                                    </div>
+                                    <div class="timeline-content ps-4">
+                                        <h5 class="fw-bold text-white">Associate Degree in Information Systems</h5>
+                                        <p class="text-white-50 small">Teamwork and collaboration skills. System analysis projects, applying both Waterfall and Scrum methodologies. Software design patterns and SOLID principles for building scalable and maintainable applications.</p>
+                                    </div>
+                                    </div>
+
+                                    <div class="timeline-item d-flex mb-4">
+                                    <div class="timeline-date pe-4 border-end border-2 border-dark text-end">
+                                        <span class="fw-bold text-white">2024</span>
+                                    </div>
+                                    <div class="timeline-content ps-4">
+                                        <h5 class="fw-bold text-white">Latam Challenge - SQL</h5>
+                                        <p class="text-white-50 small">Database querying, data manipulation, and efficient data management.</p>
+                                    </div>
+                                    </div>
+
+                                    <div class="timeline-item d-flex mb-4">
+                                    <div class="timeline-date pe-4 border-end border-2 border-dark text-end">
+                                        <span class="fw-bold text-white">2023</span>
+                                    </div>
+                                    <div class="timeline-content ps-4">
+                                        <h5 class="fw-bold text-white">University Technical Degree in Programming</h5>
+                                        <p class="text-white-50 small">Strong foundation in programming, including C, C++, Java, JavaScript, and TypeScript. Knowledge of object-oriented programming (OOP) and SOLID principles.</p>
+                                    </div>
+                                    </div>
+
+                                    <div class="timeline-item d-flex mb-4">
+                                    <div class="timeline-date pe-4 border-end border-2 border-dark text-end">
+                                        <span class="fw-bold text-white">2023</span>
+                                    </div>
+                                    <div class="timeline-content ps-4">
+                                        <h5 class="fw-bold text-white">Introduction to programming in Python</h5>
+                                        <p class="text-white-50 small">Foundations of coding and creation of simple Python scripts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
+            <section id="contact">
+                <h1 class="text-center mb-5 text-white fw-bold display-2">Contact</h1>
+                <div class="contact-container">
+                    <div class="contact whatsapp">
+                        <h1 class="fw-bold">WhatsApp</h1>
+                        <a aria-label="Chat on WhatsApp" href="https://wa.me/5491138857351/?text=Hola!%20me%20encuentro%20interesado%20en%20tus%20servicios." target="_blank">
+                            <img alt="Chat on WhatsApp" src="static/images/Whatsapp Assets/whatsapp.png" class="contactimg hover-zoom"/>
+                        </a>
+                    </div>
+                    <div class="contact gmail">
+                        <h1 class="fw-bold">Gmail</h1>
+                        <a href="mailto:ezequielbacchini@gmail.com" target="_blank"><img alt="Chat on Gmail" src="static/images/Gmail Assets/gmail.png" class="contactimg hover-zoom"/></a>
+                    </div>
+                    <div class="contact github">
+                        <h1 class="fw-bold">GitHub</h1>
+                        <a href="https://github.com/Xr60031" target="_blank"><img alt="GitHub" src="static/images/GitHub Assets/github.png" class="contactimg hover-zoom"/></a>
+                    </div>
+                </div>
+            </section>
+
+            <br>
         </main>
         <script src="static/js/projects.js"></script>
+        <script src="static/js/aboutme.js"></script>
     </body>
 
 </html>

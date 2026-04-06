@@ -71,18 +71,57 @@ h1,h2,h3,h4,h5,h6,p,a{
 /**/
 
 /*Projects*/
-.split-side {
-    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+.row.vh-100 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    will-change: flex; 
 }
 
-#side-left:hover { flex: 0 0 55%; }
-#side-left:hover + #side-right { flex: 0 0 45%; }
+.split-side {
+    height: 75vh !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    overflow: hidden;
+    transition: flex 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
+        max-width 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+        filter 0.4s ease;
+}
 
-#side-right:hover { flex: 0 0 75%; }
-#side-left:has(+ #side-right:hover) { flex: 0 0 25%; }
+#side-left {
+    flex: 0 0 41.666667% !important;
+    max-width: 41.666667% !important;
+}
 
-.fade-out { opacity: 0; transform: translateY(10px); transition: 0.3s; }
-.fade-in { opacity: 1; transform: translateY(0); transition: 0.5s; }
+#side-right {
+    flex: 0 0 58.333333% !important;
+    max-width: 58.333333% !important;
+}
+
+#side-left:hover {
+    flex: 0 0 55% !important;
+    max-width: 55% !important;
+    z-index: 2;
+}
+#side-left:hover + #side-right {
+    flex: 0 0 45% !important;
+    max-width: 45% !important;
+}
+
+#side-right:hover {
+    flex: 0 0 75% !important; 
+    max-width: 75% !important;
+    z-index: 2;
+}
+
+.row:has(#side-right:hover) #side-left {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+}
 
 .filter-white { filter: invert(1); }
 
@@ -108,7 +147,7 @@ opacity: 0.8;
 
 .timeline-item:hover {
 opacity: 1;
-transform: scale(1.03) translateX(10px);
+transform: scale(1.1) translateX(10px);
 }
 
 .timeline-date span {
@@ -124,5 +163,46 @@ transition: letter-spacing 0.3s ease;
 
 .timeline-item:hover .timeline-content h5 {
 letter-spacing: 1px;
+}
+/**/
+
+/*Hover Effect*/
+.hover-zoom {
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    will-change: transform; 
+}
+
+.hover-zoom:hover {
+    transform: scale(1.2); 
+}
+/**/
+
+/*About Me*/
+.cursor {
+    color: white;
+    animation: blink 0.7s infinite;
+    font-weight: 200;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+#typewriter {
+    color: white;
+    text-transform: uppercase;
+}
+
+.about-description {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease 2s;
+}
+
+.about-description.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 /**/
