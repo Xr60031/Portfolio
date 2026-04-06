@@ -14,9 +14,12 @@
     --div-contact-px: 1px;
     --div-contact-border-color: black;
     --div-contact-padding: 10px;
+    --div-contact-container-gap: 20px;
 
-    --contact-image-width:312px; 
-    --contact-image-height: 72px;
+    --contact-image-width:100px; 
+    --contact-image-height: 100px;
+    --contact-container-width: 250px;
+    --contact-container-height: 250px;
 }
 
 h1,h2,h3,h4,h5,h6,p,a{
@@ -26,12 +29,19 @@ h1,h2,h3,h4,h5,h6,p,a{
     font-style: normal;
 }
 
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--div-contact-container-gap);
+}
+
 .contact{
-    display: inline-block;
+    width: var(--contact-container-width);
+    height: var(--contact-container-height);
+    border-radius: var(--div-contact-radius);
     align-content: center;
     text-align: center;
     padding: var(--div-contact-padding);
-    border-radius: var(--div-contact-radius);
 }
 
 .contactimg{
