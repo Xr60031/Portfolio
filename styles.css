@@ -1,0 +1,55 @@
+:root {
+    --font-weight: 500;
+
+    --color-gmail: #C62220;
+    --color-text-gmail: white;
+
+    --color-whatsapp: #25D366;
+    --color-text-whatsapp: white;
+
+    --color-github: black;
+    --color-text-github: white;
+    
+    --div-contact-radius: 5%;
+    --div-contact-px: 1px;
+    --div-contact-border-color: black;
+    --div-contact-padding: 10px;
+
+    --contact-image-width:312px; 
+    --contact-image-height: 72px;
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: var(--font-weight);
+    font-style: normal;
+}
+
+.contact{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    padding: var(--div-contact-padding);
+    border-radius: var(--div-contact-radius);
+}
+
+.contactimg{
+    width: var(--contact-image-width);
+    height: var(--contact-image-height);
+}
+
+.whatsapp{
+    background-color: var(--color-whatsapp);
+    color: var(--color-text-whatsapp);
+}
+
+.gmail{
+    background-color: var(--color-gmail);
+    color: var(--color-text-gmail);
+}
+
+.github{
+    background-color: var(--color-github);
+    color: var(--color-text-github);
+}
