@@ -9,13 +9,16 @@
 
     --color-github: black;
     --color-text-github: white;
-    --color-border-github: white;
+
+    --color-linkedin: #0B66C3;
+    --color-text-linkedin: white;
     
     --div-contact-radius: 5%;
     --div-contact-px: 1px;
     --div-contact-border-color: black;
     --div-contact-padding: 10px;
     --div-contact-container-gap: 20px;
+    --div-color-border: white;
 
     --contact-image-width:100px; 
     --contact-image-height: 100px;
@@ -46,7 +49,7 @@ h1,h2,h3,h4,h5,h6,p,a{
     padding: var(--div-contact-padding);
 
     color: var(--color-text-github);
-    border: var(--div-contact-px) solid var(--color-border-github);
+    border: var(--div-contact-px) solid var(--div-color-border);
 }
 
 .contactimg{
@@ -66,7 +69,14 @@ h1,h2,h3,h4,h5,h6,p,a{
 
 .github{
     background-color: var(--color-github);
+    color: var(--color-text-github);
 }
+
+.linkedin{
+    background-color: var(--color-linkedin);
+    color: var(--color-text-linkedin);
+}
+
 /**/
 
 /*Projects*/

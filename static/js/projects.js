@@ -8,14 +8,14 @@ const myProjects = [
     },
     {
         title: "Nuclear Reactor System",
-        subtitle: "Laboratory 3 - Academic Project",
+        subtitle: "Laboratory - Academic Project",
         github: "https://github.com/Xr60031/Laboratorio_3_Trabajo_Practico_Reactor_Nuclear",
         img: "static/images/Project Assets/nuclearplant.png",
         desc: "A simulated nuclear reactor software system to manage scenarios such as temperature fluctuations, alert notifications, and safety measures, applying SOLID principles and object-oriented programming (OOP)."
     },
     {
         title: "University Subject Notebook",
-        subtitle: "Laboratory 4 - Academic Project",
+        subtitle: "Laboratory - Academic Project",
         github: "https://github.com/Nico-DM/libreta-materias",
         img: "static/images/Project Assets/universitybooks.png",
         desc: "A student grade management system that allows users to record, track, and organize their midterm and final exam results."
