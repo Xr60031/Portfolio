@@ -20,10 +20,10 @@
     --div-contact-container-gap: 20px;
     --div-color-border: white;
 
-    --contact-image-width:100px; 
-    --contact-image-height: 100px;
-    --contact-container-width: 250px;
-    --contact-container-height: 250px;
+    --contact-image-width: clamp(50px, 10vw, 100px);
+    --contact-image-height: clamp(50px, 10vw, 100px);
+    --contact-container-width: clamp(140px, 40vw, 250px);
+    --contact-container-height:  clamp(140px, 40vw, 250px);
 }
 
 body {
