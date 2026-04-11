@@ -47,7 +47,6 @@ h1,h2,h3,h4,h5,h6,p,a{
     align-content: center;
     text-align: center;
     padding: var(--div-contact-padding);
-
     color: var(--color-text-github);
     border: var(--div-contact-px) solid var(--div-color-border);
 }
