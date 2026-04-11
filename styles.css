@@ -26,7 +26,7 @@
 }
 
 body {
-    padding-top: 80px;
+    padding-top: 20px;
 }
 
 h1,h2,h3,h4,h5,h6,p,a{
@@ -52,6 +52,7 @@ h1,h2,h3,h4,h5,h6,p,a{
     padding: var(--div-contact-padding);
     color: var(--color-text-github);
     border: var(--div-contact-px) solid var(--div-color-border);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 
 .contactimg{
