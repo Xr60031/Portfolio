@@ -84,65 +84,121 @@ h1,h2,h3,h4,h5,h6,p,a{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    will-change: flex; 
+    will-change: flex;
 }
 
 .split-side {
-    height: 75vh !important;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding: 3rem;
     overflow: hidden;
-    transition: flex 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
+    transition: flex 0.8s cubic-bezier(0.25, 1, 0.5, 1),
         max-width 0.8s cubic-bezier(0.25, 1, 0.5, 1),
         filter 0.4s ease;
 }
 
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 #side-left {
-    flex: 0 0 41.666667% !important;
-    max-width: 41.666667% !important;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
 }
 
 #side-right {
-    flex: 0 0 58.333333% !important;
-    max-width: 58.333333% !important;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
 }
 
-#side-left:hover {
-    flex: 0 0 55% !important;
-    max-width: 55% !important;
-    z-index: 2;
-}
-#side-left:hover + #side-right {
-    flex: 0 0 45% !important;
-    max-width: 45% !important;
+/* ===== DESKTOP ===== */
+@media (min-width: 768px) {
+
+    #side-left:hover {
+        flex: 0 0 55%;
+        max-width: 55%;
+        z-index: 2;
+    }
+
+    #side-left:hover + #side-right {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    #side-right:hover {
+        flex: 0 0 75%;
+        max-width: 75%;
+        z-index: 2;
+    }
+
+    .row:has(#side-right:hover) #side-left {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
 }
 
-#side-right:hover {
-    flex: 0 0 75% !important; 
-    max-width: 75% !important;
-    z-index: 2;
+/* ===== MOBILE ===== */
+@media (max-width: 767px) {
+
+    .row.vh-100 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .split-side {
+        height: auto;
+        max-width: 100% !important;
+        flex: none !important;
+        padding: 1.5rem;
+    }
+
+    #p-title {
+        font-size: 1.6rem;
+    }
+
+    #p-img {
+        width: 100%;
+        max-height: 220px;
+        object-fit: cover;
+    }
+
+    #p-desc {
+        font-size: 0.95rem;
+    }
 }
 
-.row:has(#side-right:hover) #side-left {
-    flex: 0 0 25% !important;
-    max-width: 25% !important;
+#p-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-
-.filter-white { filter: invert(1); }
 
 #p-link {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    gap: 8px;
     transition: transform 0.2s;
     color: var(--color-text-github);
 }
 
 #p-link:hover {
     transform: scale(1.05);
+}
+
+.filter-white {
+    filter: invert(1);
 }
 /**/
 

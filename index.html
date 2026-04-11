@@ -58,33 +58,50 @@
             <section class="py-5"></section>
 
             <section id="projects">
-                <h1 class="text-center mb-5 text-white fw-bold display-2">Projects</h1>
+                <h1 class="text-center mb-5 text-white fw-bold display-4 display-md-2">Projects</h1>
+
                 <div class="container p-0 overflow-hidden bg-dark text-white">
-                    <div class="row g-0 align-items-stretch">
-                        
-                        <div id="side-left" class="col-md-5 d-flex flex-column justify-content-center align-items-center p-5 bg-black split-side border-end border-secondary">
-                        <h2 id="p-title" class="display-3 fw-bold text-center mb-4">Helpy - Invoicing System</h2>
-                        
-                        <a id="p-link" href="https://github.com/Xr60031/PPS-Ezequiel-Bacchini" target="_blank" class="btn-github-custom">
-                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="30" class="me-2 filter-white">
-                            <span id="p-link-text">Visit GitHub</span>
-                        </a>
+                    <div class="row vh-50 g-0 align-items-stretch">
 
-                        <div class="mt-5 d-flex gap-3">
-                            <button class="btn btn-dark border-secondary rounded-circle" onclick="changeProject(-1)">❮</button>
-                            <button class="btn btn-dark border-secondary rounded-circle" onclick="changeProject(1)">❯</button>
-                        </div>
+                        <!-- LEFT -->
+                        <div id="side-left" class="split-side bg-black border-end border-secondary text-center">
+
+                            <div class="left-content">
+                                <h2 id="p-title" class="fw-bold">
+                                    Helpy - Invoicing System
+                                </h2>
+
+                                <a id="p-link" href="https://github.com/Xr60031/PPS-Ezequiel-Bacchini" target="_blank">
+                                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="30" class="me-2 filter-white">
+                                    <span id="p-link-text">Visit GitHub</span>
+                                </a>
+                            </div>
+
+                            <div class="controls">
+                                <button class="btn btn-dark border-secondary rounded-circle" onclick="changeProject(-1)">❮</button>
+                                <button class="btn btn-dark border-secondary rounded-circle" onclick="changeProject(1)">❯</button>
+                            </div>
+
                         </div>
 
-                        <div id="side-right" class="col-md-7 d-flex flex-column justify-content-center p-5 bg-dark split-side position-relative">
-                            <div id="p-content" class="fade-in">
-                                <img id="p-img" src="static/images/Project Assets/pps.png" class="img-fluid rounded shadow-lg mb-4 w-100">
+                        <!-- RIGHT -->
+                        <div id="side-right" class="split-side bg-dark position-relative">
+
+                            <div id="p-content">
+                                <img id="p-img" src="static/images/Project Assets/pps.png" class="img-fluid rounded shadow-lg mb-4">
+
                                 <div class="p-4 bg-black bg-opacity-25 rounded border-start border-3 border-white">
-                                    <h4 id="p-subtitle" class="text-white fw-bold uppercase">Profesional Supervised Practice</h4>
-                                    <p id="p-desc" class="lead text-light">Developed an invoicing system designed for users with mild intellectual disabilities, simplifying the billing process and providing guided assistance to maximize usability and ease of use.</p>
+                                    <h4 id="p-subtitle" class="text-white fw-bold">
+                                        Profesional Supervised Practice
+                                    </h4>
+                                    <p id="p-desc" class="text-light">
+                                        Developed an invoicing system designed for users with mild intellectual disabilities, simplifying the billing process and providing guided assistance to maximize usability and ease of use.
+                                    </p>
                                 </div>
                             </div>
+
                         </div>
+
                     </div>
                 </div>
             </section>
