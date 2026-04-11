@@ -151,30 +151,34 @@ h1,h2,h3,h4,h5,h6,p,a{
 /* ===== MOBILE ===== */
 @media (max-width: 767px) {
 
-    .row.vh-100 {
+    .row.vh-100,
+    .row.vh-50 {
         flex-direction: column;
         height: auto;
     }
 
-    .split-side {
-        height: auto;
-        max-width: 100% !important;
+    #side-left,
+    #side-right {
         flex: none !important;
-        padding: 1.5rem;
+        max-width: 100% !important;
     }
 
-    #p-title {
-        font-size: 1.6rem;
+    #side-left:hover,
+    #side-right:hover,
+    #side-left:hover + #side-right,
+    .row:has(#side-right:hover) #side-left {
+        flex: none !important;
+        max-width: 100% !important;
+    }
+
+    .split-side {
+        height: auto !important;
+        transition: none !important;
     }
 
     #p-img {
-        width: 100%;
         max-height: 220px;
         object-fit: cover;
-    }
-
-    #p-desc {
-        font-size: 0.95rem;
     }
 }
 
