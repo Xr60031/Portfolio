@@ -22,7 +22,6 @@
 
     --contact-image-width: clamp(50px, 10vw, 100px);
     --contact-image-height: clamp(50px, 10vw, 100px);
-    --contact-container-width: clamp(140px, 40vw, 250px);
     --contact-container-height:  clamp(140px, 40vw, 250px);
 }
 
@@ -45,8 +44,8 @@ h1,h2,h3,h4,h5,h6,p,a{
 }
 
 .contact{
-    width: var(--contact-container-width);
-    height: var(--contact-container-height);
+    width: 100%;
+    min-height: var(--contact-container-height);
     border-radius: var(--div-contact-radius);
     align-content: center;
     text-align: center;
