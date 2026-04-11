@@ -26,6 +26,10 @@
     --contact-container-height: 250px;
 }
 
+body {
+    padding-top: 80px;
+}
+
 h1,h2,h3,h4,h5,h6,p,a{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -182,7 +186,7 @@ letter-spacing: 1px;
 }
 
 .hover-zoom:hover {
-    transform: scale(1.2); 
+    transform: scale(1.01); 
 }
 /**/
 
@@ -214,3 +218,8 @@ letter-spacing: 1px;
     transform: translateY(0);
 }
 /**/
+
+#p-img {
+    height: auto;
+    max-height: 300px;
+}
